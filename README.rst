@@ -1,2 +1,4 @@
-# boto3_exceptions
+boto3_exceptions
+================
+
 Boto3 is awesome, except exceptions.
