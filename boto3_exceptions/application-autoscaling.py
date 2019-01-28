@@ -1,0 +1,11 @@
+import boto3
+
+exceptions = boto3.client('application-autoscaling').exceptions
+
+ConcurrentUpdateException = exceptions.ConcurrentUpdateException
+FailedResourceAccessException = exceptions.FailedResourceAccessException
+InternalServiceException = exceptions.InternalServiceException
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+LimitExceededException = exceptions.LimitExceededException
+ObjectNotFoundException = exceptions.ObjectNotFoundException
+ValidationException = exceptions.ValidationException

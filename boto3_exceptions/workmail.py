@@ -1,0 +1,20 @@
+import boto3
+
+exceptions = boto3.client('workmail').exceptions
+
+DirectoryServiceAuthenticationFailedException = exceptions.DirectoryServiceAuthenticationFailedException
+DirectoryUnavailableException = exceptions.DirectoryUnavailableException
+EmailAddressInUseException = exceptions.EmailAddressInUseException
+EntityAlreadyRegisteredException = exceptions.EntityAlreadyRegisteredException
+EntityNotFoundException = exceptions.EntityNotFoundException
+EntityStateException = exceptions.EntityStateException
+InvalidConfigurationException = exceptions.InvalidConfigurationException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidPasswordException = exceptions.InvalidPasswordException
+MailDomainNotFoundException = exceptions.MailDomainNotFoundException
+MailDomainStateException = exceptions.MailDomainStateException
+NameAvailabilityException = exceptions.NameAvailabilityException
+OrganizationNotFoundException = exceptions.OrganizationNotFoundException
+OrganizationStateException = exceptions.OrganizationStateException
+ReservedNameException = exceptions.ReservedNameException
+UnsupportedOperationException = exceptions.UnsupportedOperationException

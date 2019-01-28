@@ -1,0 +1,16 @@
+import boto3
+
+exceptions = boto3.client('kinesisanalyticsv2').exceptions
+
+CodeValidationException = exceptions.CodeValidationException
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+InvalidApplicationConfigurationException = exceptions.InvalidApplicationConfigurationException
+InvalidArgumentException = exceptions.InvalidArgumentException
+InvalidRequestException = exceptions.InvalidRequestException
+LimitExceededException = exceptions.LimitExceededException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ResourceProvisionedThroughputExceededException = exceptions.ResourceProvisionedThroughputExceededException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+UnableToDetectSchemaException = exceptions.UnableToDetectSchemaException
+UnsupportedOperationException = exceptions.UnsupportedOperationException

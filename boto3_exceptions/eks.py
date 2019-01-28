@@ -1,0 +1,13 @@
+import boto3
+
+exceptions = boto3.client('eks').exceptions
+
+ClientException = exceptions.ClientException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidRequestException = exceptions.InvalidRequestException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceLimitExceededException = exceptions.ResourceLimitExceededException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServerException = exceptions.ServerException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+UnsupportedAvailabilityZoneException = exceptions.UnsupportedAvailabilityZoneException

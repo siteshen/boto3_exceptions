@@ -1,0 +1,12 @@
+import boto3
+
+exceptions = boto3.client('glacier').exceptions
+
+InsufficientCapacityException = exceptions.InsufficientCapacityException
+InvalidParameterValueException = exceptions.InvalidParameterValueException
+LimitExceededException = exceptions.LimitExceededException
+MissingParameterValueException = exceptions.MissingParameterValueException
+PolicyEnforcedException = exceptions.PolicyEnforcedException
+RequestTimeoutException = exceptions.RequestTimeoutException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException

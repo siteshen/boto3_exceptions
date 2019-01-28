@@ -1,0 +1,37 @@
+import boto3
+
+exceptions = boto3.client('ses').exceptions
+
+AccountSendingPausedException = exceptions.AccountSendingPausedException
+AlreadyExists = exceptions.AlreadyExists
+CannotDelete = exceptions.CannotDelete
+ConfigurationSetAlreadyExists = exceptions.ConfigurationSetAlreadyExists
+ConfigurationSetDoesNotExist = exceptions.ConfigurationSetDoesNotExist
+ConfigurationSetSendingPausedException = exceptions.ConfigurationSetSendingPausedException
+CustomVerificationEmailInvalidContent = exceptions.CustomVerificationEmailInvalidContent
+CustomVerificationEmailTemplateAlreadyExists = exceptions.CustomVerificationEmailTemplateAlreadyExists
+CustomVerificationEmailTemplateDoesNotExist = exceptions.CustomVerificationEmailTemplateDoesNotExist
+EventDestinationAlreadyExists = exceptions.EventDestinationAlreadyExists
+EventDestinationDoesNotExist = exceptions.EventDestinationDoesNotExist
+FromEmailAddressNotVerified = exceptions.FromEmailAddressNotVerified
+InvalidCloudWatchDestination = exceptions.InvalidCloudWatchDestination
+InvalidConfigurationSet = exceptions.InvalidConfigurationSet
+InvalidFirehoseDestination = exceptions.InvalidFirehoseDestination
+InvalidLambdaFunction = exceptions.InvalidLambdaFunction
+InvalidPolicy = exceptions.InvalidPolicy
+InvalidRenderingParameter = exceptions.InvalidRenderingParameter
+InvalidS3Configuration = exceptions.InvalidS3Configuration
+InvalidSNSDestination = exceptions.InvalidSNSDestination
+InvalidSnsTopic = exceptions.InvalidSnsTopic
+InvalidTemplate = exceptions.InvalidTemplate
+InvalidTrackingOptions = exceptions.InvalidTrackingOptions
+LimitExceeded = exceptions.LimitExceeded
+MailFromDomainNotVerifiedException = exceptions.MailFromDomainNotVerifiedException
+MessageRejected = exceptions.MessageRejected
+MissingRenderingAttribute = exceptions.MissingRenderingAttribute
+ProductionAccessNotGranted = exceptions.ProductionAccessNotGranted
+RuleDoesNotExist = exceptions.RuleDoesNotExist
+RuleSetDoesNotExist = exceptions.RuleSetDoesNotExist
+TemplateDoesNotExist = exceptions.TemplateDoesNotExist
+TrackingOptionsAlreadyExistsException = exceptions.TrackingOptionsAlreadyExistsException
+TrackingOptionsDoesNotExistException = exceptions.TrackingOptionsDoesNotExistException

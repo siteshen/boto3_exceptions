@@ -1,0 +1,19 @@
+import boto3
+
+exceptions = boto3.client('rekognition').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+IdempotentParameterMismatchException = exceptions.IdempotentParameterMismatchException
+ImageTooLargeException = exceptions.ImageTooLargeException
+InternalServerError = exceptions.InternalServerError
+InvalidImageFormatException = exceptions.InvalidImageFormatException
+InvalidPaginationTokenException = exceptions.InvalidPaginationTokenException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidS3ObjectException = exceptions.InvalidS3ObjectException
+LimitExceededException = exceptions.LimitExceededException
+ProvisionedThroughputExceededException = exceptions.ProvisionedThroughputExceededException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ThrottlingException = exceptions.ThrottlingException
+VideoTooLargeException = exceptions.VideoTooLargeException

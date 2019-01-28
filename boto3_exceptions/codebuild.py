@@ -1,0 +1,9 @@
+import boto3
+
+exceptions = boto3.client('codebuild').exceptions
+
+AccountLimitExceededException = exceptions.AccountLimitExceededException
+InvalidInputException = exceptions.InvalidInputException
+OAuthProviderException = exceptions.OAuthProviderException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

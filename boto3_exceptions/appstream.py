@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('appstream').exceptions
+
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+IncompatibleImageException = exceptions.IncompatibleImageException
+InvalidAccountStatusException = exceptions.InvalidAccountStatusException
+InvalidParameterCombinationException = exceptions.InvalidParameterCombinationException
+InvalidRoleException = exceptions.InvalidRoleException
+LimitExceededException = exceptions.LimitExceededException
+OperationNotPermittedException = exceptions.OperationNotPermittedException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotAvailableException = exceptions.ResourceNotAvailableException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

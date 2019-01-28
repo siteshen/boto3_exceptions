@@ -1,0 +1,17 @@
+import boto3
+
+exceptions = boto3.client('shield').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+AccessDeniedForDependencyException = exceptions.AccessDeniedForDependencyException
+InternalErrorException = exceptions.InternalErrorException
+InvalidOperationException = exceptions.InvalidOperationException
+InvalidPaginationTokenException = exceptions.InvalidPaginationTokenException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidResourceException = exceptions.InvalidResourceException
+LimitsExceededException = exceptions.LimitsExceededException
+LockedSubscriptionException = exceptions.LockedSubscriptionException
+NoAssociatedRoleException = exceptions.NoAssociatedRoleException
+OptimisticLockException = exceptions.OptimisticLockException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

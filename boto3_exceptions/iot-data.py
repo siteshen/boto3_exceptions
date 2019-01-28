@@ -1,0 +1,14 @@
+import boto3
+
+exceptions = boto3.client('iot-data').exceptions
+
+ConflictException = exceptions.ConflictException
+InternalFailureException = exceptions.InternalFailureException
+InvalidRequestException = exceptions.InvalidRequestException
+MethodNotAllowedException = exceptions.MethodNotAllowedException
+RequestEntityTooLargeException = exceptions.RequestEntityTooLargeException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+ThrottlingException = exceptions.ThrottlingException
+UnauthorizedException = exceptions.UnauthorizedException
+UnsupportedDocumentEncodingException = exceptions.UnsupportedDocumentEncodingException

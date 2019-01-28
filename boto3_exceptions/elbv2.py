@@ -1,0 +1,39 @@
+import boto3
+
+exceptions = boto3.client('elbv2').exceptions
+
+AllocationIdNotFound = exceptions.AllocationIdNotFound
+AvailabilityZoneNotSupported = exceptions.AvailabilityZoneNotSupported
+CertificateNotFound = exceptions.CertificateNotFound
+DuplicateListener = exceptions.DuplicateListener
+DuplicateLoadBalancerName = exceptions.DuplicateLoadBalancerName
+DuplicateTagKeys = exceptions.DuplicateTagKeys
+DuplicateTargetGroupName = exceptions.DuplicateTargetGroupName
+HealthUnavailable = exceptions.HealthUnavailable
+IncompatibleProtocols = exceptions.IncompatibleProtocols
+InvalidConfigurationRequest = exceptions.InvalidConfigurationRequest
+InvalidLoadBalancerAction = exceptions.InvalidLoadBalancerAction
+InvalidScheme = exceptions.InvalidScheme
+InvalidSecurityGroup = exceptions.InvalidSecurityGroup
+InvalidSubnet = exceptions.InvalidSubnet
+InvalidTarget = exceptions.InvalidTarget
+ListenerNotFound = exceptions.ListenerNotFound
+LoadBalancerNotFound = exceptions.LoadBalancerNotFound
+OperationNotPermitted = exceptions.OperationNotPermitted
+PriorityInUse = exceptions.PriorityInUse
+ResourceInUse = exceptions.ResourceInUse
+RuleNotFound = exceptions.RuleNotFound
+SSLPolicyNotFound = exceptions.SSLPolicyNotFound
+SubnetNotFound = exceptions.SubnetNotFound
+TargetGroupAssociationLimit = exceptions.TargetGroupAssociationLimit
+TargetGroupNotFound = exceptions.TargetGroupNotFound
+TooManyActions = exceptions.TooManyActions
+TooManyCertificates = exceptions.TooManyCertificates
+TooManyListeners = exceptions.TooManyListeners
+TooManyLoadBalancers = exceptions.TooManyLoadBalancers
+TooManyRegistrationsForTargetId = exceptions.TooManyRegistrationsForTargetId
+TooManyRules = exceptions.TooManyRules
+TooManyTags = exceptions.TooManyTags
+TooManyTargetGroups = exceptions.TooManyTargetGroups
+TooManyTargets = exceptions.TooManyTargets
+UnsupportedProtocol = exceptions.UnsupportedProtocol

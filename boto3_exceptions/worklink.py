@@ -1,0 +1,10 @@
+import boto3
+
+exceptions = boto3.client('worklink').exceptions
+
+InternalServerErrorException = exceptions.InternalServerErrorException
+InvalidRequestException = exceptions.InvalidRequestException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+TooManyRequestsException = exceptions.TooManyRequestsException
+UnauthorizedException = exceptions.UnauthorizedException

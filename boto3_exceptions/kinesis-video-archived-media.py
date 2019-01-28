@@ -1,0 +1,12 @@
+import boto3
+
+exceptions = boto3.client('kinesis-video-archived-media').exceptions
+
+ClientLimitExceededException = exceptions.ClientLimitExceededException
+InvalidArgumentException = exceptions.InvalidArgumentException
+InvalidCodecPrivateDataException = exceptions.InvalidCodecPrivateDataException
+MissingCodecPrivateDataException = exceptions.MissingCodecPrivateDataException
+NoDataRetentionException = exceptions.NoDataRetentionException
+NotAuthorizedException = exceptions.NotAuthorizedException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+UnsupportedStreamMediaTypeException = exceptions.UnsupportedStreamMediaTypeException

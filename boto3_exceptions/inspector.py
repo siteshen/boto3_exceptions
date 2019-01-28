@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('inspector').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+AgentsAlreadyRunningAssessmentException = exceptions.AgentsAlreadyRunningAssessmentException
+AssessmentRunInProgressException = exceptions.AssessmentRunInProgressException
+InternalException = exceptions.InternalException
+InvalidCrossAccountRoleException = exceptions.InvalidCrossAccountRoleException
+InvalidInputException = exceptions.InvalidInputException
+LimitExceededException = exceptions.LimitExceededException
+NoSuchEntityException = exceptions.NoSuchEntityException
+PreviewGenerationInProgressException = exceptions.PreviewGenerationInProgressException
+ServiceTemporarilyUnavailableException = exceptions.ServiceTemporarilyUnavailableException
+UnsupportedFeatureException = exceptions.UnsupportedFeatureException

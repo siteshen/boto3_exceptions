@@ -1,0 +1,17 @@
+import boto3
+
+exceptions = boto3.client('codestar').exceptions
+
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidServiceRoleException = exceptions.InvalidServiceRoleException
+LimitExceededException = exceptions.LimitExceededException
+ProjectAlreadyExistsException = exceptions.ProjectAlreadyExistsException
+ProjectConfigurationException = exceptions.ProjectConfigurationException
+ProjectCreationFailedException = exceptions.ProjectCreationFailedException
+ProjectNotFoundException = exceptions.ProjectNotFoundException
+TeamMemberAlreadyAssociatedException = exceptions.TeamMemberAlreadyAssociatedException
+TeamMemberNotFoundException = exceptions.TeamMemberNotFoundException
+UserProfileAlreadyExistsException = exceptions.UserProfileAlreadyExistsException
+UserProfileNotFoundException = exceptions.UserProfileNotFoundException
+ValidationException = exceptions.ValidationException

@@ -1,0 +1,11 @@
+import boto3
+
+exceptions = boto3.client('iotanalytics').exceptions
+
+InternalFailureException = exceptions.InternalFailureException
+InvalidRequestException = exceptions.InvalidRequestException
+LimitExceededException = exceptions.LimitExceededException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+ThrottlingException = exceptions.ThrottlingException

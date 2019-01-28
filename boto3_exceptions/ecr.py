@@ -1,0 +1,26 @@
+import boto3
+
+exceptions = boto3.client('ecr').exceptions
+
+EmptyUploadException = exceptions.EmptyUploadException
+ImageAlreadyExistsException = exceptions.ImageAlreadyExistsException
+ImageNotFoundException = exceptions.ImageNotFoundException
+InvalidLayerException = exceptions.InvalidLayerException
+InvalidLayerPartException = exceptions.InvalidLayerPartException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidTagParameterException = exceptions.InvalidTagParameterException
+LayerAlreadyExistsException = exceptions.LayerAlreadyExistsException
+LayerInaccessibleException = exceptions.LayerInaccessibleException
+LayerPartTooSmallException = exceptions.LayerPartTooSmallException
+LayersNotFoundException = exceptions.LayersNotFoundException
+LifecyclePolicyNotFoundException = exceptions.LifecyclePolicyNotFoundException
+LifecyclePolicyPreviewInProgressException = exceptions.LifecyclePolicyPreviewInProgressException
+LifecyclePolicyPreviewNotFoundException = exceptions.LifecyclePolicyPreviewNotFoundException
+LimitExceededException = exceptions.LimitExceededException
+RepositoryAlreadyExistsException = exceptions.RepositoryAlreadyExistsException
+RepositoryNotEmptyException = exceptions.RepositoryNotEmptyException
+RepositoryNotFoundException = exceptions.RepositoryNotFoundException
+RepositoryPolicyNotFoundException = exceptions.RepositoryPolicyNotFoundException
+ServerException = exceptions.ServerException
+TooManyTagsException = exceptions.TooManyTagsException
+UploadNotFoundException = exceptions.UploadNotFoundException

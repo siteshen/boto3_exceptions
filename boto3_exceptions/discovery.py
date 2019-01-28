@@ -1,0 +1,12 @@
+import boto3
+
+exceptions = boto3.client('discovery').exceptions
+
+AuthorizationErrorException = exceptions.AuthorizationErrorException
+ConflictErrorException = exceptions.ConflictErrorException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidParameterValueException = exceptions.InvalidParameterValueException
+OperationNotPermittedException = exceptions.OperationNotPermittedException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServerInternalErrorException = exceptions.ServerInternalErrorException

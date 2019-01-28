@@ -1,0 +1,11 @@
+import boto3
+
+exceptions = boto3.client('budgets').exceptions
+
+CreationLimitExceededException = exceptions.CreationLimitExceededException
+DuplicateRecordException = exceptions.DuplicateRecordException
+ExpiredNextTokenException = exceptions.ExpiredNextTokenException
+InternalErrorException = exceptions.InternalErrorException
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidParameterException = exceptions.InvalidParameterException
+NotFoundException = exceptions.NotFoundException

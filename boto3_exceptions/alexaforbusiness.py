@@ -1,0 +1,16 @@
+import boto3
+
+exceptions = boto3.client('alexaforbusiness').exceptions
+
+AlreadyExistsException = exceptions.AlreadyExistsException
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+DeviceNotRegisteredException = exceptions.DeviceNotRegisteredException
+InvalidCertificateAuthorityException = exceptions.InvalidCertificateAuthorityException
+InvalidDeviceException = exceptions.InvalidDeviceException
+InvalidUserStatusException = exceptions.InvalidUserStatusException
+LimitExceededException = exceptions.LimitExceededException
+NameInUseException = exceptions.NameInUseException
+NotFoundException = exceptions.NotFoundException
+ResourceInUseException = exceptions.ResourceInUseException
+SkillNotLinkedException = exceptions.SkillNotLinkedException
+UnauthorizedException = exceptions.UnauthorizedException

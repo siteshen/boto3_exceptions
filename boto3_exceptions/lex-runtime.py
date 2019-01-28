@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('lex-runtime').exceptions
+
+BadGatewayException = exceptions.BadGatewayException
+BadRequestException = exceptions.BadRequestException
+ConflictException = exceptions.ConflictException
+DependencyFailedException = exceptions.DependencyFailedException
+InternalFailureException = exceptions.InternalFailureException
+LimitExceededException = exceptions.LimitExceededException
+LoopDetectedException = exceptions.LoopDetectedException
+NotAcceptableException = exceptions.NotAcceptableException
+NotFoundException = exceptions.NotFoundException
+RequestTimeoutException = exceptions.RequestTimeoutException
+UnsupportedMediaTypeException = exceptions.UnsupportedMediaTypeException

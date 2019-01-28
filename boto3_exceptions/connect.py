@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('connect').exceptions
+
+ContactNotFoundException = exceptions.ContactNotFoundException
+DestinationNotAllowedException = exceptions.DestinationNotAllowedException
+DuplicateResourceException = exceptions.DuplicateResourceException
+InternalServiceException = exceptions.InternalServiceException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidRequestException = exceptions.InvalidRequestException
+LimitExceededException = exceptions.LimitExceededException
+OutboundContactNotPermittedException = exceptions.OutboundContactNotPermittedException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ThrottlingException = exceptions.ThrottlingException
+UserNotFoundException = exceptions.UserNotFoundException

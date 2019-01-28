@@ -1,0 +1,14 @@
+import boto3
+
+exceptions = boto3.client('translate').exceptions
+
+DetectedLanguageLowConfidenceException = exceptions.DetectedLanguageLowConfidenceException
+InternalServerException = exceptions.InternalServerException
+InvalidParameterValueException = exceptions.InvalidParameterValueException
+InvalidRequestException = exceptions.InvalidRequestException
+LimitExceededException = exceptions.LimitExceededException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+TextSizeLimitExceededException = exceptions.TextSizeLimitExceededException
+TooManyRequestsException = exceptions.TooManyRequestsException
+UnsupportedLanguagePairException = exceptions.UnsupportedLanguagePairException

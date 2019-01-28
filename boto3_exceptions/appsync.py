@@ -1,0 +1,14 @@
+import boto3
+
+exceptions = boto3.client('appsync').exceptions
+
+ApiKeyLimitExceededException = exceptions.ApiKeyLimitExceededException
+ApiKeyValidityOutOfBoundsException = exceptions.ApiKeyValidityOutOfBoundsException
+ApiLimitExceededException = exceptions.ApiLimitExceededException
+BadRequestException = exceptions.BadRequestException
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+GraphQLSchemaException = exceptions.GraphQLSchemaException
+InternalFailureException = exceptions.InternalFailureException
+LimitExceededException = exceptions.LimitExceededException
+NotFoundException = exceptions.NotFoundException
+UnauthorizedException = exceptions.UnauthorizedException

@@ -1,0 +1,12 @@
+import boto3
+
+exceptions = boto3.client('backup').exceptions
+
+AlreadyExistsException = exceptions.AlreadyExistsException
+DependencyFailureException = exceptions.DependencyFailureException
+InvalidParameterValueException = exceptions.InvalidParameterValueException
+InvalidRequestException = exceptions.InvalidRequestException
+LimitExceededException = exceptions.LimitExceededException
+MissingParameterValueException = exceptions.MissingParameterValueException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException

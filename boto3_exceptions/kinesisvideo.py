@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('kinesisvideo').exceptions
+
+AccountStreamLimitExceededException = exceptions.AccountStreamLimitExceededException
+ClientLimitExceededException = exceptions.ClientLimitExceededException
+DeviceStreamLimitExceededException = exceptions.DeviceStreamLimitExceededException
+InvalidArgumentException = exceptions.InvalidArgumentException
+InvalidDeviceException = exceptions.InvalidDeviceException
+InvalidResourceFormatException = exceptions.InvalidResourceFormatException
+NotAuthorizedException = exceptions.NotAuthorizedException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+TagsPerResourceExceededLimitException = exceptions.TagsPerResourceExceededLimitException
+VersionMismatchException = exceptions.VersionMismatchException

@@ -1,0 +1,12 @@
+import boto3
+
+exceptions = boto3.client('robomaker').exceptions
+
+ConcurrentDeploymentException = exceptions.ConcurrentDeploymentException
+IdempotentParameterMismatchException = exceptions.IdempotentParameterMismatchException
+InternalServerException = exceptions.InternalServerException
+InvalidParameterException = exceptions.InvalidParameterException
+LimitExceededException = exceptions.LimitExceededException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ThrottlingException = exceptions.ThrottlingException

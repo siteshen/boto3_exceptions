@@ -1,0 +1,25 @@
+import boto3
+
+exceptions = boto3.client('glue').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+AlreadyExistsException = exceptions.AlreadyExistsException
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+ConcurrentRunsExceededException = exceptions.ConcurrentRunsExceededException
+ConditionCheckFailureException = exceptions.ConditionCheckFailureException
+CrawlerNotRunningException = exceptions.CrawlerNotRunningException
+CrawlerRunningException = exceptions.CrawlerRunningException
+CrawlerStoppingException = exceptions.CrawlerStoppingException
+EntityNotFoundException = exceptions.EntityNotFoundException
+GlueEncryptionException = exceptions.GlueEncryptionException
+IdempotentParameterMismatchException = exceptions.IdempotentParameterMismatchException
+InternalServiceException = exceptions.InternalServiceException
+InvalidInputException = exceptions.InvalidInputException
+NoScheduleException = exceptions.NoScheduleException
+OperationTimeoutException = exceptions.OperationTimeoutException
+ResourceNumberLimitExceededException = exceptions.ResourceNumberLimitExceededException
+SchedulerNotRunningException = exceptions.SchedulerNotRunningException
+SchedulerRunningException = exceptions.SchedulerRunningException
+SchedulerTransitioningException = exceptions.SchedulerTransitioningException
+ValidationException = exceptions.ValidationException
+VersionMismatchException = exceptions.VersionMismatchException

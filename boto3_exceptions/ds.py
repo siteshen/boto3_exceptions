@@ -1,0 +1,27 @@
+import boto3
+
+exceptions = boto3.client('ds').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+AuthenticationFailedException = exceptions.AuthenticationFailedException
+ClientException = exceptions.ClientException
+DirectoryAlreadySharedException = exceptions.DirectoryAlreadySharedException
+DirectoryLimitExceededException = exceptions.DirectoryLimitExceededException
+DirectoryNotSharedException = exceptions.DirectoryNotSharedException
+DirectoryUnavailableException = exceptions.DirectoryUnavailableException
+DomainControllerLimitExceededException = exceptions.DomainControllerLimitExceededException
+EntityAlreadyExistsException = exceptions.EntityAlreadyExistsException
+EntityDoesNotExistException = exceptions.EntityDoesNotExistException
+InsufficientPermissionsException = exceptions.InsufficientPermissionsException
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidPasswordException = exceptions.InvalidPasswordException
+InvalidTargetException = exceptions.InvalidTargetException
+IpRouteLimitExceededException = exceptions.IpRouteLimitExceededException
+OrganizationsException = exceptions.OrganizationsException
+ServiceException = exceptions.ServiceException
+ShareLimitExceededException = exceptions.ShareLimitExceededException
+SnapshotLimitExceededException = exceptions.SnapshotLimitExceededException
+TagLimitExceededException = exceptions.TagLimitExceededException
+UnsupportedOperationException = exceptions.UnsupportedOperationException
+UserDoesNotExistException = exceptions.UserDoesNotExistException

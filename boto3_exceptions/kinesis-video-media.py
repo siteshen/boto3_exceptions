@@ -1,0 +1,10 @@
+import boto3
+
+exceptions = boto3.client('kinesis-video-media').exceptions
+
+ClientLimitExceededException = exceptions.ClientLimitExceededException
+ConnectionLimitExceededException = exceptions.ConnectionLimitExceededException
+InvalidArgumentException = exceptions.InvalidArgumentException
+InvalidEndpointException = exceptions.InvalidEndpointException
+NotAuthorizedException = exceptions.NotAuthorizedException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

@@ -1,0 +1,31 @@
+import boto3
+
+exceptions = boto3.client('iot').exceptions
+
+CertificateConflictException = exceptions.CertificateConflictException
+CertificateStateException = exceptions.CertificateStateException
+CertificateValidationException = exceptions.CertificateValidationException
+ConflictingResourceUpdateException = exceptions.ConflictingResourceUpdateException
+DeleteConflictException = exceptions.DeleteConflictException
+IndexNotReadyException = exceptions.IndexNotReadyException
+InternalException = exceptions.InternalException
+InternalFailureException = exceptions.InternalFailureException
+InvalidQueryException = exceptions.InvalidQueryException
+InvalidRequestException = exceptions.InvalidRequestException
+InvalidResponseException = exceptions.InvalidResponseException
+InvalidStateTransitionException = exceptions.InvalidStateTransitionException
+LimitExceededException = exceptions.LimitExceededException
+MalformedPolicyException = exceptions.MalformedPolicyException
+NotConfiguredException = exceptions.NotConfiguredException
+RegistrationCodeValidationException = exceptions.RegistrationCodeValidationException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ResourceRegistrationFailureException = exceptions.ResourceRegistrationFailureException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+SqlParseException = exceptions.SqlParseException
+ThrottlingException = exceptions.ThrottlingException
+TransferAlreadyCompletedException = exceptions.TransferAlreadyCompletedException
+TransferConflictException = exceptions.TransferConflictException
+UnauthorizedException = exceptions.UnauthorizedException
+VersionConflictException = exceptions.VersionConflictException
+VersionsLimitExceededException = exceptions.VersionsLimitExceededException

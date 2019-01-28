@@ -1,0 +1,10 @@
+import boto3
+
+exceptions = boto3.client('transfer').exceptions
+
+InternalServiceError = exceptions.InternalServiceError
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidRequestException = exceptions.InvalidRequestException
+ResourceExistsException = exceptions.ResourceExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException

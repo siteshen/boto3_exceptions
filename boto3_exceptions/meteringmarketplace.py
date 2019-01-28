@@ -1,0 +1,19 @@
+import boto3
+
+exceptions = boto3.client('meteringmarketplace').exceptions
+
+CustomerNotEntitledException = exceptions.CustomerNotEntitledException
+DisabledApiException = exceptions.DisabledApiException
+DuplicateRequestException = exceptions.DuplicateRequestException
+ExpiredTokenException = exceptions.ExpiredTokenException
+InternalServiceErrorException = exceptions.InternalServiceErrorException
+InvalidCustomerIdentifierException = exceptions.InvalidCustomerIdentifierException
+InvalidEndpointRegionException = exceptions.InvalidEndpointRegionException
+InvalidProductCodeException = exceptions.InvalidProductCodeException
+InvalidPublicKeyVersionException = exceptions.InvalidPublicKeyVersionException
+InvalidRegionException = exceptions.InvalidRegionException
+InvalidTokenException = exceptions.InvalidTokenException
+InvalidUsageDimensionException = exceptions.InvalidUsageDimensionException
+PlatformNotSupportedException = exceptions.PlatformNotSupportedException
+ThrottlingException = exceptions.ThrottlingException
+TimestampOutOfBoundsException = exceptions.TimestampOutOfBoundsException

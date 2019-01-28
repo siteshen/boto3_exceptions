@@ -1,0 +1,16 @@
+import boto3
+
+exceptions = boto3.client('workspaces').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+InvalidParameterValuesException = exceptions.InvalidParameterValuesException
+InvalidResourceStateException = exceptions.InvalidResourceStateException
+OperationInProgressException = exceptions.OperationInProgressException
+OperationNotSupportedException = exceptions.OperationNotSupportedException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceAssociatedException = exceptions.ResourceAssociatedException
+ResourceCreationFailedException = exceptions.ResourceCreationFailedException
+ResourceLimitExceededException = exceptions.ResourceLimitExceededException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ResourceUnavailableException = exceptions.ResourceUnavailableException
+UnsupportedWorkspaceConfigurationException = exceptions.UnsupportedWorkspaceConfigurationException

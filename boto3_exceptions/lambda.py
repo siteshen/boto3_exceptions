@@ -1,0 +1,29 @@
+import boto3
+
+exceptions = boto3.client('lambda').exceptions
+
+CodeStorageExceededException = exceptions.CodeStorageExceededException
+EC2AccessDeniedException = exceptions.EC2AccessDeniedException
+EC2ThrottledException = exceptions.EC2ThrottledException
+EC2UnexpectedException = exceptions.EC2UnexpectedException
+ENILimitReachedException = exceptions.ENILimitReachedException
+InvalidParameterValueException = exceptions.InvalidParameterValueException
+InvalidRequestContentException = exceptions.InvalidRequestContentException
+InvalidRuntimeException = exceptions.InvalidRuntimeException
+InvalidSecurityGroupIDException = exceptions.InvalidSecurityGroupIDException
+InvalidSubnetIDException = exceptions.InvalidSubnetIDException
+InvalidZipFileException = exceptions.InvalidZipFileException
+KMSAccessDeniedException = exceptions.KMSAccessDeniedException
+KMSDisabledException = exceptions.KMSDisabledException
+KMSInvalidStateException = exceptions.KMSInvalidStateException
+KMSNotFoundException = exceptions.KMSNotFoundException
+PolicyLengthExceededException = exceptions.PolicyLengthExceededException
+PreconditionFailedException = exceptions.PreconditionFailedException
+RequestTooLargeException = exceptions.RequestTooLargeException
+ResourceConflictException = exceptions.ResourceConflictException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceException = exceptions.ServiceException
+SubnetIPAddressLimitReachedException = exceptions.SubnetIPAddressLimitReachedException
+TooManyRequestsException = exceptions.TooManyRequestsException
+UnsupportedMediaTypeException = exceptions.UnsupportedMediaTypeException

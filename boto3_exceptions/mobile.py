@@ -1,0 +1,12 @@
+import boto3
+
+exceptions = boto3.client('mobile').exceptions
+
+AccountActionRequiredException = exceptions.AccountActionRequiredException
+BadRequestException = exceptions.BadRequestException
+InternalFailureException = exceptions.InternalFailureException
+LimitExceededException = exceptions.LimitExceededException
+NotFoundException = exceptions.NotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+TooManyRequestsException = exceptions.TooManyRequestsException
+UnauthorizedException = exceptions.UnauthorizedException

@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('secretsmanager').exceptions
+
+DecryptionFailure = exceptions.DecryptionFailure
+EncryptionFailure = exceptions.EncryptionFailure
+InternalServiceError = exceptions.InternalServiceError
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidRequestException = exceptions.InvalidRequestException
+LimitExceededException = exceptions.LimitExceededException
+MalformedPolicyDocumentException = exceptions.MalformedPolicyDocumentException
+PreconditionNotMetException = exceptions.PreconditionNotMetException
+ResourceExistsException = exceptions.ResourceExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

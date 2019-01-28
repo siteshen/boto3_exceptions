@@ -1,0 +1,12 @@
+import boto3
+
+exceptions = boto3.client('machinelearning').exceptions
+
+IdempotentParameterMismatchException = exceptions.IdempotentParameterMismatchException
+InternalServerException = exceptions.InternalServerException
+InvalidInputException = exceptions.InvalidInputException
+InvalidTagException = exceptions.InvalidTagException
+LimitExceededException = exceptions.LimitExceededException
+PredictorNotMountedException = exceptions.PredictorNotMountedException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+TagLimitExceededException = exceptions.TagLimitExceededException

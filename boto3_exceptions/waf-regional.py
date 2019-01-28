@@ -1,0 +1,20 @@
+import boto3
+
+exceptions = boto3.client('waf-regional').exceptions
+
+WAFDisallowedNameException = exceptions.WAFDisallowedNameException
+WAFInternalErrorException = exceptions.WAFInternalErrorException
+WAFInvalidAccountException = exceptions.WAFInvalidAccountException
+WAFInvalidOperationException = exceptions.WAFInvalidOperationException
+WAFInvalidParameterException = exceptions.WAFInvalidParameterException
+WAFInvalidPermissionPolicyException = exceptions.WAFInvalidPermissionPolicyException
+WAFInvalidRegexPatternException = exceptions.WAFInvalidRegexPatternException
+WAFLimitsExceededException = exceptions.WAFLimitsExceededException
+WAFNonEmptyEntityException = exceptions.WAFNonEmptyEntityException
+WAFNonexistentContainerException = exceptions.WAFNonexistentContainerException
+WAFNonexistentItemException = exceptions.WAFNonexistentItemException
+WAFReferencedItemException = exceptions.WAFReferencedItemException
+WAFServiceLinkedRoleErrorException = exceptions.WAFServiceLinkedRoleErrorException
+WAFStaleDataException = exceptions.WAFStaleDataException
+WAFSubscriptionNotFoundException = exceptions.WAFSubscriptionNotFoundException
+WAFUnavailableEntityException = exceptions.WAFUnavailableEntityException

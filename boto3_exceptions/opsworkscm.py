@@ -1,0 +1,10 @@
+import boto3
+
+exceptions = boto3.client('opsworkscm').exceptions
+
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidStateException = exceptions.InvalidStateException
+LimitExceededException = exceptions.LimitExceededException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ValidationException = exceptions.ValidationException

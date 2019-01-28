@@ -1,0 +1,21 @@
+import boto3
+
+exceptions = boto3.client('sdb').exceptions
+
+AttributeDoesNotExist = exceptions.AttributeDoesNotExist
+DuplicateItemName = exceptions.DuplicateItemName
+InvalidNextToken = exceptions.InvalidNextToken
+InvalidNumberPredicates = exceptions.InvalidNumberPredicates
+InvalidNumberValueTests = exceptions.InvalidNumberValueTests
+InvalidParameterValue = exceptions.InvalidParameterValue
+InvalidQueryExpression = exceptions.InvalidQueryExpression
+MissingParameter = exceptions.MissingParameter
+NoSuchDomain = exceptions.NoSuchDomain
+NumberDomainAttributesExceeded = exceptions.NumberDomainAttributesExceeded
+NumberDomainBytesExceeded = exceptions.NumberDomainBytesExceeded
+NumberDomainsExceeded = exceptions.NumberDomainsExceeded
+NumberItemAttributesExceeded = exceptions.NumberItemAttributesExceeded
+NumberSubmittedAttributesExceeded = exceptions.NumberSubmittedAttributesExceeded
+NumberSubmittedItemsExceeded = exceptions.NumberSubmittedItemsExceeded
+RequestTimeout = exceptions.RequestTimeout
+TooManyRequestedAttributes = exceptions.TooManyRequestedAttributes

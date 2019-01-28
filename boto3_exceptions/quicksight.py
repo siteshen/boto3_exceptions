@@ -1,0 +1,19 @@
+import boto3
+
+exceptions = boto3.client('quicksight').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+DomainNotWhitelistedException = exceptions.DomainNotWhitelistedException
+IdentityTypeNotSupportedException = exceptions.IdentityTypeNotSupportedException
+InternalFailureException = exceptions.InternalFailureException
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidParameterValueException = exceptions.InvalidParameterValueException
+LimitExceededException = exceptions.LimitExceededException
+PreconditionNotMetException = exceptions.PreconditionNotMetException
+QuickSightUserNotFoundException = exceptions.QuickSightUserNotFoundException
+ResourceExistsException = exceptions.ResourceExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ResourceUnavailableException = exceptions.ResourceUnavailableException
+SessionLifetimeInMinutesInvalidException = exceptions.SessionLifetimeInMinutesInvalidException
+ThrottlingException = exceptions.ThrottlingException
+UnsupportedUserEditionException = exceptions.UnsupportedUserEditionException

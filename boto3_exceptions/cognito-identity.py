@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('cognito-identity').exceptions
+
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+DeveloperUserAlreadyRegisteredException = exceptions.DeveloperUserAlreadyRegisteredException
+ExternalServiceException = exceptions.ExternalServiceException
+InternalErrorException = exceptions.InternalErrorException
+InvalidIdentityPoolConfigurationException = exceptions.InvalidIdentityPoolConfigurationException
+InvalidParameterException = exceptions.InvalidParameterException
+LimitExceededException = exceptions.LimitExceededException
+NotAuthorizedException = exceptions.NotAuthorizedException
+ResourceConflictException = exceptions.ResourceConflictException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+TooManyRequestsException = exceptions.TooManyRequestsException

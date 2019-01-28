@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('sms').exceptions
+
+InternalError = exceptions.InternalError
+InvalidParameterException = exceptions.InvalidParameterException
+MissingRequiredParameterException = exceptions.MissingRequiredParameterException
+NoConnectorsAvailableException = exceptions.NoConnectorsAvailableException
+OperationNotPermittedException = exceptions.OperationNotPermittedException
+ReplicationJobAlreadyExistsException = exceptions.ReplicationJobAlreadyExistsException
+ReplicationJobNotFoundException = exceptions.ReplicationJobNotFoundException
+ReplicationRunLimitExceededException = exceptions.ReplicationRunLimitExceededException
+ServerCannotBeReplicatedException = exceptions.ServerCannotBeReplicatedException
+TemporarilyUnavailableException = exceptions.TemporarilyUnavailableException
+UnauthorizedOperationException = exceptions.UnauthorizedOperationException

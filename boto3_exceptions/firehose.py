@@ -1,0 +1,10 @@
+import boto3
+
+exceptions = boto3.client('firehose').exceptions
+
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+InvalidArgumentException = exceptions.InvalidArgumentException
+LimitExceededException = exceptions.LimitExceededException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException

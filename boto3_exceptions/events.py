@@ -1,0 +1,11 @@
+import boto3
+
+exceptions = boto3.client('events').exceptions
+
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+InternalException = exceptions.InternalException
+InvalidEventPatternException = exceptions.InvalidEventPatternException
+LimitExceededException = exceptions.LimitExceededException
+ManagedRuleException = exceptions.ManagedRuleException
+PolicyLengthExceededException = exceptions.PolicyLengthExceededException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

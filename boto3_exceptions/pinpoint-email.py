@@ -1,0 +1,13 @@
+import boto3
+
+exceptions = boto3.client('pinpoint-email').exceptions
+
+AccountSuspendedException = exceptions.AccountSuspendedException
+AlreadyExistsException = exceptions.AlreadyExistsException
+BadRequestException = exceptions.BadRequestException
+LimitExceededException = exceptions.LimitExceededException
+MailFromDomainNotVerifiedException = exceptions.MailFromDomainNotVerifiedException
+MessageRejected = exceptions.MessageRejected
+NotFoundException = exceptions.NotFoundException
+SendingPausedException = exceptions.SendingPausedException
+TooManyRequestsException = exceptions.TooManyRequestsException

@@ -1,0 +1,25 @@
+import boto3
+
+exceptions = boto3.client('efs').exceptions
+
+BadRequest = exceptions.BadRequest
+DependencyTimeout = exceptions.DependencyTimeout
+FileSystemAlreadyExists = exceptions.FileSystemAlreadyExists
+FileSystemInUse = exceptions.FileSystemInUse
+FileSystemLimitExceeded = exceptions.FileSystemLimitExceeded
+FileSystemNotFound = exceptions.FileSystemNotFound
+IncorrectFileSystemLifeCycleState = exceptions.IncorrectFileSystemLifeCycleState
+IncorrectMountTargetState = exceptions.IncorrectMountTargetState
+InsufficientThroughputCapacity = exceptions.InsufficientThroughputCapacity
+InternalServerError = exceptions.InternalServerError
+IpAddressInUse = exceptions.IpAddressInUse
+MountTargetConflict = exceptions.MountTargetConflict
+MountTargetNotFound = exceptions.MountTargetNotFound
+NetworkInterfaceLimitExceeded = exceptions.NetworkInterfaceLimitExceeded
+NoFreeAddressesInSubnet = exceptions.NoFreeAddressesInSubnet
+SecurityGroupLimitExceeded = exceptions.SecurityGroupLimitExceeded
+SecurityGroupNotFound = exceptions.SecurityGroupNotFound
+SubnetNotFound = exceptions.SubnetNotFound
+ThroughputLimitExceeded = exceptions.ThroughputLimitExceeded
+TooManyRequests = exceptions.TooManyRequests
+UnsupportedAvailabilityZone = exceptions.UnsupportedAvailabilityZone

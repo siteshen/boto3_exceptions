@@ -1,0 +1,24 @@
+import boto3
+
+exceptions = boto3.client('ecs').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+AttributeLimitExceededException = exceptions.AttributeLimitExceededException
+BlockedException = exceptions.BlockedException
+ClientException = exceptions.ClientException
+ClusterContainsContainerInstancesException = exceptions.ClusterContainsContainerInstancesException
+ClusterContainsServicesException = exceptions.ClusterContainsServicesException
+ClusterContainsTasksException = exceptions.ClusterContainsTasksException
+ClusterNotFoundException = exceptions.ClusterNotFoundException
+InvalidParameterException = exceptions.InvalidParameterException
+MissingVersionException = exceptions.MissingVersionException
+NoUpdateAvailableException = exceptions.NoUpdateAvailableException
+PlatformTaskDefinitionIncompatibilityException = exceptions.PlatformTaskDefinitionIncompatibilityException
+PlatformUnknownException = exceptions.PlatformUnknownException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServerException = exceptions.ServerException
+ServiceNotActiveException = exceptions.ServiceNotActiveException
+ServiceNotFoundException = exceptions.ServiceNotFoundException
+TargetNotFoundException = exceptions.TargetNotFoundException
+UnsupportedFeatureException = exceptions.UnsupportedFeatureException
+UpdateInProgressException = exceptions.UpdateInProgressException

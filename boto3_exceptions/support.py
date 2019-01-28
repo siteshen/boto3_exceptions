@@ -1,0 +1,13 @@
+import boto3
+
+exceptions = boto3.client('support').exceptions
+
+AttachmentIdNotFound = exceptions.AttachmentIdNotFound
+AttachmentLimitExceeded = exceptions.AttachmentLimitExceeded
+AttachmentSetExpired = exceptions.AttachmentSetExpired
+AttachmentSetIdNotFound = exceptions.AttachmentSetIdNotFound
+AttachmentSetSizeLimitExceeded = exceptions.AttachmentSetSizeLimitExceeded
+CaseCreationLimitExceeded = exceptions.CaseCreationLimitExceeded
+CaseIdNotFound = exceptions.CaseIdNotFound
+DescribeAttachmentLimitExceeded = exceptions.DescribeAttachmentLimitExceeded
+InternalServerError = exceptions.InternalServerError

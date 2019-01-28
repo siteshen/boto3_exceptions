@@ -1,0 +1,24 @@
+import boto3
+
+exceptions = boto3.client('importexport').exceptions
+
+BucketPermissionException = exceptions.BucketPermissionException
+CanceledJobIdException = exceptions.CanceledJobIdException
+CreateJobQuotaExceededException = exceptions.CreateJobQuotaExceededException
+ExpiredJobIdException = exceptions.ExpiredJobIdException
+InvalidAccessKeyIdException = exceptions.InvalidAccessKeyIdException
+InvalidAddressException = exceptions.InvalidAddressException
+InvalidCustomsException = exceptions.InvalidCustomsException
+InvalidFileSystemException = exceptions.InvalidFileSystemException
+InvalidJobIdException = exceptions.InvalidJobIdException
+InvalidManifestFieldException = exceptions.InvalidManifestFieldException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidVersionException = exceptions.InvalidVersionException
+MalformedManifestException = exceptions.MalformedManifestException
+MissingCustomsException = exceptions.MissingCustomsException
+MissingManifestFieldException = exceptions.MissingManifestFieldException
+MissingParameterException = exceptions.MissingParameterException
+MultipleRegionsException = exceptions.MultipleRegionsException
+NoSuchBucketException = exceptions.NoSuchBucketException
+UnableToCancelJobIdException = exceptions.UnableToCancelJobIdException
+UnableToUpdateJobIdException = exceptions.UnableToUpdateJobIdException

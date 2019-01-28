@@ -1,0 +1,11 @@
+import boto3
+
+exceptions = boto3.client('iot-jobs-data').exceptions
+
+CertificateValidationException = exceptions.CertificateValidationException
+InvalidRequestException = exceptions.InvalidRequestException
+InvalidStateTransitionException = exceptions.InvalidStateTransitionException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+TerminalStateException = exceptions.TerminalStateException
+ThrottlingException = exceptions.ThrottlingException

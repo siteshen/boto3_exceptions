@@ -1,0 +1,11 @@
+import boto3
+
+exceptions = boto3.client('elastictranscoder').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+IncompatibleVersionException = exceptions.IncompatibleVersionException
+InternalServiceException = exceptions.InternalServiceException
+LimitExceededException = exceptions.LimitExceededException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ValidationException = exceptions.ValidationException

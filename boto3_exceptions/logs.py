@@ -1,0 +1,15 @@
+import boto3
+
+exceptions = boto3.client('logs').exceptions
+
+DataAlreadyAcceptedException = exceptions.DataAlreadyAcceptedException
+InvalidOperationException = exceptions.InvalidOperationException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidSequenceTokenException = exceptions.InvalidSequenceTokenException
+LimitExceededException = exceptions.LimitExceededException
+MalformedQueryException = exceptions.MalformedQueryException
+OperationAbortedException = exceptions.OperationAbortedException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ServiceUnavailableException = exceptions.ServiceUnavailableException
+UnrecognizedClientException = exceptions.UnrecognizedClientException

@@ -1,0 +1,20 @@
+import boto3
+
+exceptions = boto3.client('acm-pca').exceptions
+
+CertificateMismatchException = exceptions.CertificateMismatchException
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+InvalidArgsException = exceptions.InvalidArgsException
+InvalidArnException = exceptions.InvalidArnException
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidPolicyException = exceptions.InvalidPolicyException
+InvalidStateException = exceptions.InvalidStateException
+InvalidTagException = exceptions.InvalidTagException
+LimitExceededException = exceptions.LimitExceededException
+MalformedCSRException = exceptions.MalformedCSRException
+MalformedCertificateException = exceptions.MalformedCertificateException
+RequestAlreadyProcessedException = exceptions.RequestAlreadyProcessedException
+RequestFailedException = exceptions.RequestFailedException
+RequestInProgressException = exceptions.RequestInProgressException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+TooManyTagsException = exceptions.TooManyTagsException
