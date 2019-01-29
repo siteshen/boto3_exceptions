@@ -2,10 +2,10 @@ import boto3
 
 exceptions = boto3.client('autoscaling').exceptions
 
-AlreadyExists = exceptions.AlreadyExists
+AlreadyExistsFault = exceptions.AlreadyExistsFault
 InvalidNextToken = exceptions.InvalidNextToken
-LimitExceeded = exceptions.LimitExceeded
-ResourceContention = exceptions.ResourceContention
-ResourceInUse = exceptions.ResourceInUse
-ScalingActivityInProgress = exceptions.ScalingActivityInProgress
+LimitExceededFault = exceptions.LimitExceededFault
+ResourceContentionFault = exceptions.ResourceContentionFault
+ResourceInUseFault = exceptions.ResourceInUseFault
+ScalingActivityInProgressFault = exceptions.ScalingActivityInProgressFault
 ServiceLinkedRoleFailure = exceptions.ServiceLinkedRoleFailure

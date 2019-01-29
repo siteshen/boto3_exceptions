@@ -3,10 +3,10 @@ import boto3
 exceptions = boto3.client('cloudformation').exceptions
 
 AlreadyExistsException = exceptions.AlreadyExistsException
-ChangeSetNotFound = exceptions.ChangeSetNotFound
+ChangeSetNotFoundException = exceptions.ChangeSetNotFoundException
 CreatedButModifiedException = exceptions.CreatedButModifiedException
 InsufficientCapabilitiesException = exceptions.InsufficientCapabilitiesException
-InvalidChangeSetStatus = exceptions.InvalidChangeSetStatus
+InvalidChangeSetStatusException = exceptions.InvalidChangeSetStatusException
 InvalidOperationException = exceptions.InvalidOperationException
 LimitExceededException = exceptions.LimitExceededException
 NameAlreadyExistsException = exceptions.NameAlreadyExistsException

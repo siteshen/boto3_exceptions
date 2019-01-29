@@ -2,19 +2,19 @@ import boto3
 
 exceptions = boto3.client('sqs').exceptions
 
-AWS.SimpleQueueService.BatchEntryIdsNotDistinct = exceptions.AWS.SimpleQueueService.BatchEntryIdsNotDistinct
-AWS.SimpleQueueService.BatchRequestTooLong = exceptions.AWS.SimpleQueueService.BatchRequestTooLong
-AWS.SimpleQueueService.EmptyBatchRequest = exceptions.AWS.SimpleQueueService.EmptyBatchRequest
+BatchEntryIdsNotDistinct = exceptions.BatchEntryIdsNotDistinct
+BatchRequestTooLong = exceptions.BatchRequestTooLong
+EmptyBatchRequest = exceptions.EmptyBatchRequest
 InvalidAttributeName = exceptions.InvalidAttributeName
-AWS.SimpleQueueService.InvalidBatchEntryId = exceptions.AWS.SimpleQueueService.InvalidBatchEntryId
+InvalidBatchEntryId = exceptions.InvalidBatchEntryId
 InvalidIdFormat = exceptions.InvalidIdFormat
 InvalidMessageContents = exceptions.InvalidMessageContents
-AWS.SimpleQueueService.MessageNotInflight = exceptions.AWS.SimpleQueueService.MessageNotInflight
+MessageNotInflight = exceptions.MessageNotInflight
 OverLimit = exceptions.OverLimit
-AWS.SimpleQueueService.PurgeQueueInProgress = exceptions.AWS.SimpleQueueService.PurgeQueueInProgress
-AWS.SimpleQueueService.QueueDeletedRecently = exceptions.AWS.SimpleQueueService.QueueDeletedRecently
-AWS.SimpleQueueService.NonExistentQueue = exceptions.AWS.SimpleQueueService.NonExistentQueue
-QueueAlreadyExists = exceptions.QueueAlreadyExists
+PurgeQueueInProgress = exceptions.PurgeQueueInProgress
+QueueDeletedRecently = exceptions.QueueDeletedRecently
+QueueDoesNotExist = exceptions.QueueDoesNotExist
+QueueNameExists = exceptions.QueueNameExists
 ReceiptHandleIsInvalid = exceptions.ReceiptHandleIsInvalid
-AWS.SimpleQueueService.TooManyEntriesInBatchRequest = exceptions.AWS.SimpleQueueService.TooManyEntriesInBatchRequest
-AWS.SimpleQueueService.UnsupportedOperation = exceptions.AWS.SimpleQueueService.UnsupportedOperation
+TooManyEntriesInBatchRequest = exceptions.TooManyEntriesInBatchRequest
+UnsupportedOperation = exceptions.UnsupportedOperation

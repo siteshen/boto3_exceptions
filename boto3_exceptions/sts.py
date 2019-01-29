@@ -3,10 +3,10 @@ import boto3
 exceptions = boto3.client('sts').exceptions
 
 ExpiredTokenException = exceptions.ExpiredTokenException
-IDPCommunicationError = exceptions.IDPCommunicationError
-IDPRejectedClaim = exceptions.IDPRejectedClaim
+IDPCommunicationErrorException = exceptions.IDPCommunicationErrorException
+IDPRejectedClaimException = exceptions.IDPRejectedClaimException
 InvalidAuthorizationMessageException = exceptions.InvalidAuthorizationMessageException
-InvalidIdentityToken = exceptions.InvalidIdentityToken
-MalformedPolicyDocument = exceptions.MalformedPolicyDocument
-PackedPolicyTooLarge = exceptions.PackedPolicyTooLarge
+InvalidIdentityTokenException = exceptions.InvalidIdentityTokenException
+MalformedPolicyDocumentException = exceptions.MalformedPolicyDocumentException
+PackedPolicyTooLargeException = exceptions.PackedPolicyTooLargeException
 RegionDisabledException = exceptions.RegionDisabledException

@@ -3,8 +3,8 @@ import boto3
 exceptions = boto3.client('cloudsearch').exceptions
 
 BaseException = exceptions.BaseException
-DisabledAction = exceptions.DisabledAction
+DisabledOperationException = exceptions.DisabledOperationException
 InternalException = exceptions.InternalException
-InvalidType = exceptions.InvalidType
-LimitExceeded = exceptions.LimitExceeded
-ResourceNotFound = exceptions.ResourceNotFound
+InvalidTypeException = exceptions.InvalidTypeException
+LimitExceededException = exceptions.LimitExceededException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

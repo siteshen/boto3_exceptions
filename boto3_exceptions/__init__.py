@@ -1,4 +1,5 @@
 import os
+import sys
 
 import boto3
 import botocore
@@ -7,23 +8,28 @@ import botocore
 def generate_service_exceptions(service_name):
     client = boto3.client(service_name)
 
-    print('generating {} exceptions ...'.format(service_name))
+    print('generating {} exceptions ...'.format(service_name), file=sys.stdout)
     with open('{}.py'.format(service_name), 'w') as file:
         print('import boto3\n', file=file)
         print(
-            "exceptions = boto3.client('{}').exceptions\n".format(service_name, service_name),
+            "exceptions = boto3.client('{}').exceptions\n".format(
+                service_name, service_name),
             file=file)
-        for key, val in client.exceptions._code_to_exception.items():
-            print('{} = exceptions.{}'.format(key, key), file=file)
+        for key, exc in client.exceptions._code_to_exception.items():
+            exc_name = exc.__name__.split('.')[-1]
+            print('{} = exceptions.{}'.format(exc_name, exc_name), file=file)
 
 
 def list_service_names():
     boto_path = botocore.__path__[0]
     data_path = os.path.join(boto_path, 'data')
-    return [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]
+    return [
+        f for f in os.listdir(data_path)
+        if os.path.isdir(os.path.join(data_path, f))
+    ]
 
 
-def generate_all_exceptions(service_names=None):
+def generate_all_exceptions(service_names=[]):
     if not service_names:
         service_names = list_service_names()
 
@@ -31,5 +37,17 @@ def generate_all_exceptions(service_names=None):
         generate_service_exceptions(service_name)
 
 
+def test_all_exceptions(service_names=[]):
+    if not service_names:
+        service_names = list_service_names()
+
+    for service_name in service_names:
+        try:
+            __import__(service_name, {}, {}, ['boto3_exceptions'])
+        except Exception as e:
+            print('import error', service_name, e, file=sys.stderr)
+
+
 if __name__ == '__main__':
     generate_all_exceptions()
+    test_all_exceptions()
