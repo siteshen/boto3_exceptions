@@ -13,6 +13,7 @@ InvalidTagException = exceptions.InvalidTagException
 LimitExceededException = exceptions.LimitExceededException
 MalformedCSRException = exceptions.MalformedCSRException
 MalformedCertificateException = exceptions.MalformedCertificateException
+PermissionAlreadyExistsException = exceptions.PermissionAlreadyExistsException
 RequestAlreadyProcessedException = exceptions.RequestAlreadyProcessedException
 RequestFailedException = exceptions.RequestFailedException
 RequestInProgressException = exceptions.RequestInProgressException

@@ -3,14 +3,18 @@ import boto3
 exceptions = boto3.client('comprehend').exceptions
 
 BatchSizeLimitExceededException = exceptions.BatchSizeLimitExceededException
+ConcurrentModificationException = exceptions.ConcurrentModificationException
 InternalServerException = exceptions.InternalServerException
 InvalidFilterException = exceptions.InvalidFilterException
 InvalidRequestException = exceptions.InvalidRequestException
 JobNotFoundException = exceptions.JobNotFoundException
+KmsKeyValidationException = exceptions.KmsKeyValidationException
 ResourceInUseException = exceptions.ResourceInUseException
 ResourceLimitExceededException = exceptions.ResourceLimitExceededException
 ResourceNotFoundException = exceptions.ResourceNotFoundException
 ResourceUnavailableException = exceptions.ResourceUnavailableException
 TextSizeLimitExceededException = exceptions.TextSizeLimitExceededException
 TooManyRequestsException = exceptions.TooManyRequestsException
+TooManyTagKeysException = exceptions.TooManyTagKeysException
+TooManyTagsException = exceptions.TooManyTagsException
 UnsupportedLanguageException = exceptions.UnsupportedLanguageException

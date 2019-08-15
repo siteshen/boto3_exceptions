@@ -10,6 +10,7 @@ BadRequest = exceptions.BadRequest
 FileSystemNotFound = exceptions.FileSystemNotFound
 IncompatibleParameterError = exceptions.IncompatibleParameterError
 InternalServerError = exceptions.InternalServerError
+InvalidExportPath = exceptions.InvalidExportPath
 InvalidImportPath = exceptions.InvalidImportPath
 InvalidNetworkSettings = exceptions.InvalidNetworkSettings
 MissingFileSystemConfiguration = exceptions.MissingFileSystemConfiguration

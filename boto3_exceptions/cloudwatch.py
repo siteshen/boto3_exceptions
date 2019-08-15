@@ -2,6 +2,7 @@ import boto3
 
 exceptions = boto3.client('cloudwatch').exceptions
 
+ConcurrentModificationException = exceptions.ConcurrentModificationException
 DashboardInvalidInputError = exceptions.DashboardInvalidInputError
 ResourceNotFound = exceptions.ResourceNotFound
 InternalServiceFault = exceptions.InternalServiceFault
@@ -11,3 +12,4 @@ InvalidParameterCombinationException = exceptions.InvalidParameterCombinationExc
 InvalidParameterValueException = exceptions.InvalidParameterValueException
 LimitExceededFault = exceptions.LimitExceededFault
 MissingRequiredParameterException = exceptions.MissingRequiredParameterException
+ResourceNotFoundException = exceptions.ResourceNotFoundException

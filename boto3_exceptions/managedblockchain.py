@@ -1,0 +1,13 @@
+import boto3
+
+exceptions = boto3.client('managedblockchain').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+IllegalActionException = exceptions.IllegalActionException
+InternalServiceErrorException = exceptions.InternalServiceErrorException
+InvalidRequestException = exceptions.InvalidRequestException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceLimitExceededException = exceptions.ResourceLimitExceededException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ResourceNotReadyException = exceptions.ResourceNotReadyException
+ThrottlingException = exceptions.ThrottlingException

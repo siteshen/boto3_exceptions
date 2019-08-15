@@ -41,3 +41,4 @@ ServiceException = exceptions.ServiceException
 SourceParentNotFoundException = exceptions.SourceParentNotFoundException
 TargetNotFoundException = exceptions.TargetNotFoundException
 TooManyRequestsException = exceptions.TooManyRequestsException
+UnsupportedAPIEndpointException = exceptions.UnsupportedAPIEndpointException

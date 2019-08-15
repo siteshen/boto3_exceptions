@@ -12,5 +12,6 @@ ResourceInUseException = exceptions.ResourceInUseException
 ResourceNotFoundException = exceptions.ResourceNotFoundException
 ResourceProvisionedThroughputExceededException = exceptions.ResourceProvisionedThroughputExceededException
 ServiceUnavailableException = exceptions.ServiceUnavailableException
+TooManyTagsException = exceptions.TooManyTagsException
 UnableToDetectSchemaException = exceptions.UnableToDetectSchemaException
 UnsupportedOperationException = exceptions.UnsupportedOperationException

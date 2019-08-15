@@ -2,4 +2,12 @@ import boto3
 
 exceptions = boto3.client('s3control').exceptions
 
+BadRequestException = exceptions.BadRequestException
+IdempotencyException = exceptions.IdempotencyException
+InternalServiceException = exceptions.InternalServiceException
+InvalidNextTokenException = exceptions.InvalidNextTokenException
+InvalidRequestException = exceptions.InvalidRequestException
+JobStatusException = exceptions.JobStatusException
 NoSuchPublicAccessBlockConfiguration = exceptions.NoSuchPublicAccessBlockConfiguration
+NotFoundException = exceptions.NotFoundException
+TooManyRequestsException = exceptions.TooManyRequestsException

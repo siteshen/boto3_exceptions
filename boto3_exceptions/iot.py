@@ -10,6 +10,7 @@ DeleteConflictException = exceptions.DeleteConflictException
 IndexNotReadyException = exceptions.IndexNotReadyException
 InternalException = exceptions.InternalException
 InternalFailureException = exceptions.InternalFailureException
+InvalidAggregationException = exceptions.InvalidAggregationException
 InvalidQueryException = exceptions.InvalidQueryException
 InvalidRequestException = exceptions.InvalidRequestException
 InvalidResponseException = exceptions.InvalidResponseException

@@ -11,6 +11,7 @@ InvalidUserStatusException = exceptions.InvalidUserStatusException
 LimitExceededException = exceptions.LimitExceededException
 NameInUseException = exceptions.NameInUseException
 NotFoundException = exceptions.NotFoundException
+ResourceAssociatedException = exceptions.ResourceAssociatedException
 ResourceInUseException = exceptions.ResourceInUseException
 SkillNotLinkedException = exceptions.SkillNotLinkedException
 UnauthorizedException = exceptions.UnauthorizedException

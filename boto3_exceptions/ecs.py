@@ -20,5 +20,6 @@ ServerException = exceptions.ServerException
 ServiceNotActiveException = exceptions.ServiceNotActiveException
 ServiceNotFoundException = exceptions.ServiceNotFoundException
 TargetNotFoundException = exceptions.TargetNotFoundException
+TaskSetNotFoundException = exceptions.TaskSetNotFoundException
 UnsupportedFeatureException = exceptions.UnsupportedFeatureException
 UpdateInProgressException = exceptions.UpdateInProgressException

@@ -3,6 +3,7 @@ import boto3
 exceptions = boto3.client('sns').exceptions
 
 AuthorizationErrorException = exceptions.AuthorizationErrorException
+ConcurrentAccessException = exceptions.ConcurrentAccessException
 EndpointDisabledException = exceptions.EndpointDisabledException
 FilterPolicyLimitExceededException = exceptions.FilterPolicyLimitExceededException
 InternalErrorException = exceptions.InternalErrorException
@@ -17,6 +18,10 @@ KMSOptInRequired = exceptions.KMSOptInRequired
 KMSThrottlingException = exceptions.KMSThrottlingException
 NotFoundException = exceptions.NotFoundException
 PlatformApplicationDisabledException = exceptions.PlatformApplicationDisabledException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+StaleTagException = exceptions.StaleTagException
 SubscriptionLimitExceededException = exceptions.SubscriptionLimitExceededException
+TagLimitExceededException = exceptions.TagLimitExceededException
+TagPolicyException = exceptions.TagPolicyException
 ThrottledException = exceptions.ThrottledException
 TopicLimitExceededException = exceptions.TopicLimitExceededException

@@ -1,0 +1,16 @@
+import boto3
+
+exceptions = boto3.client('textract').exceptions
+
+AccessDeniedException = exceptions.AccessDeniedException
+BadDocumentException = exceptions.BadDocumentException
+DocumentTooLargeException = exceptions.DocumentTooLargeException
+IdempotentParameterMismatchException = exceptions.IdempotentParameterMismatchException
+InternalServerError = exceptions.InternalServerError
+InvalidJobIdException = exceptions.InvalidJobIdException
+InvalidParameterException = exceptions.InvalidParameterException
+InvalidS3ObjectException = exceptions.InvalidS3ObjectException
+LimitExceededException = exceptions.LimitExceededException
+ProvisionedThroughputExceededException = exceptions.ProvisionedThroughputExceededException
+ThrottlingException = exceptions.ThrottlingException
+UnsupportedDocumentException = exceptions.UnsupportedDocumentException

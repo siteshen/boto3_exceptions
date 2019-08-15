@@ -2,6 +2,7 @@ import boto3
 
 exceptions = boto3.client('appsync').exceptions
 
+AccessDeniedException = exceptions.AccessDeniedException
 ApiKeyLimitExceededException = exceptions.ApiKeyLimitExceededException
 ApiKeyValidityOutOfBoundsException = exceptions.ApiKeyValidityOutOfBoundsException
 ApiLimitExceededException = exceptions.ApiLimitExceededException
