@@ -1,0 +1,10 @@
+import boto3
+
+exceptions = boto3.client('lakeformation').exceptions
+
+AlreadyExistsException = exceptions.AlreadyExistsException
+ConcurrentModificationException = exceptions.ConcurrentModificationException
+EntityNotFoundException = exceptions.EntityNotFoundException
+InternalServiceException = exceptions.InternalServiceException
+InvalidInputException = exceptions.InvalidInputException
+OperationTimeoutException = exceptions.OperationTimeoutException

@@ -10,6 +10,7 @@ InvalidFormatFault = exceptions.InvalidFormatFault
 InvalidNextToken = exceptions.InvalidNextToken
 InvalidParameterCombinationException = exceptions.InvalidParameterCombinationException
 InvalidParameterValueException = exceptions.InvalidParameterValueException
+LimitExceededException = exceptions.LimitExceededException
 LimitExceededFault = exceptions.LimitExceededFault
 MissingRequiredParameterException = exceptions.MissingRequiredParameterException
 ResourceNotFoundException = exceptions.ResourceNotFoundException

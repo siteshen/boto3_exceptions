@@ -7,3 +7,4 @@ DataUnavailableException = exceptions.DataUnavailableException
 InvalidNextTokenException = exceptions.InvalidNextTokenException
 LimitExceededException = exceptions.LimitExceededException
 RequestChangedException = exceptions.RequestChangedException
+UnresolvableUsageUnitException = exceptions.UnresolvableUsageUnitException

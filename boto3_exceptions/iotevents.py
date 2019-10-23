@@ -1,13 +1,13 @@
 import boto3
 
-exceptions = boto3.client('robomaker').exceptions
+exceptions = boto3.client('iotevents').exceptions
 
-ConcurrentDeploymentException = exceptions.ConcurrentDeploymentException
-IdempotentParameterMismatchException = exceptions.IdempotentParameterMismatchException
-InternalServerException = exceptions.InternalServerException
-InvalidParameterException = exceptions.InvalidParameterException
+InternalFailureException = exceptions.InternalFailureException
+InvalidRequestException = exceptions.InvalidRequestException
 LimitExceededException = exceptions.LimitExceededException
 ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceInUseException = exceptions.ResourceInUseException
 ResourceNotFoundException = exceptions.ResourceNotFoundException
 ServiceUnavailableException = exceptions.ServiceUnavailableException
 ThrottlingException = exceptions.ThrottlingException
+UnsupportedOperationException = exceptions.UnsupportedOperationException

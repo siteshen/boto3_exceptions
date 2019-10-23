@@ -2,9 +2,11 @@ import boto3
 
 exceptions = boto3.client('eks').exceptions
 
+BadRequestException = exceptions.BadRequestException
 ClientException = exceptions.ClientException
 InvalidParameterException = exceptions.InvalidParameterException
 InvalidRequestException = exceptions.InvalidRequestException
+NotFoundException = exceptions.NotFoundException
 ResourceInUseException = exceptions.ResourceInUseException
 ResourceLimitExceededException = exceptions.ResourceLimitExceededException
 ResourceNotFoundException = exceptions.ResourceNotFoundException

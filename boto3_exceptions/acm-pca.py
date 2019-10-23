@@ -8,6 +8,7 @@ InvalidArgsException = exceptions.InvalidArgsException
 InvalidArnException = exceptions.InvalidArnException
 InvalidNextTokenException = exceptions.InvalidNextTokenException
 InvalidPolicyException = exceptions.InvalidPolicyException
+InvalidRequestException = exceptions.InvalidRequestException
 InvalidStateException = exceptions.InvalidStateException
 InvalidTagException = exceptions.InvalidTagException
 LimitExceededException = exceptions.LimitExceededException

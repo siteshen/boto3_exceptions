@@ -24,6 +24,7 @@ ResourceNotFoundException = exceptions.ResourceNotFoundException
 ResourceRegistrationFailureException = exceptions.ResourceRegistrationFailureException
 ServiceUnavailableException = exceptions.ServiceUnavailableException
 SqlParseException = exceptions.SqlParseException
+TaskAlreadyExistsException = exceptions.TaskAlreadyExistsException
 ThrottlingException = exceptions.ThrottlingException
 TransferAlreadyCompletedException = exceptions.TransferAlreadyCompletedException
 TransferConflictException = exceptions.TransferConflictException

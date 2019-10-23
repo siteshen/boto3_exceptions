@@ -4,6 +4,7 @@ exceptions = boto3.client('globalaccelerator').exceptions
 
 AcceleratorNotDisabledException = exceptions.AcceleratorNotDisabledException
 AcceleratorNotFoundException = exceptions.AcceleratorNotFoundException
+AccessDeniedException = exceptions.AccessDeniedException
 AssociatedEndpointGroupFoundException = exceptions.AssociatedEndpointGroupFoundException
 AssociatedListenerFoundException = exceptions.AssociatedListenerFoundException
 EndpointGroupAlreadyExistsException = exceptions.EndpointGroupAlreadyExistsException

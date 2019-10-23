@@ -5,6 +5,7 @@ exceptions = boto3.client('ecr').exceptions
 EmptyUploadException = exceptions.EmptyUploadException
 ImageAlreadyExistsException = exceptions.ImageAlreadyExistsException
 ImageNotFoundException = exceptions.ImageNotFoundException
+ImageTagAlreadyExistsException = exceptions.ImageTagAlreadyExistsException
 InvalidLayerException = exceptions.InvalidLayerException
 InvalidLayerPartException = exceptions.InvalidLayerPartException
 InvalidParameterException = exceptions.InvalidParameterException

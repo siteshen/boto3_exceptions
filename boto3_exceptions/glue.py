@@ -15,6 +15,7 @@ GlueEncryptionException = exceptions.GlueEncryptionException
 IdempotentParameterMismatchException = exceptions.IdempotentParameterMismatchException
 InternalServiceException = exceptions.InternalServiceException
 InvalidInputException = exceptions.InvalidInputException
+MLTransformNotReadyException = exceptions.MLTransformNotReadyException
 NoScheduleException = exceptions.NoScheduleException
 OperationTimeoutException = exceptions.OperationTimeoutException
 ResourceNumberLimitExceededException = exceptions.ResourceNumberLimitExceededException

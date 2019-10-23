@@ -21,4 +21,5 @@ ResourceShareLimitExceededException = exceptions.ResourceShareLimitExceededExcep
 ServerInternalException = exceptions.ServerInternalException
 ServiceUnavailableException = exceptions.ServiceUnavailableException
 TagLimitExceededException = exceptions.TagLimitExceededException
+TagPolicyViolationException = exceptions.TagPolicyViolationException
 UnknownResourceException = exceptions.UnknownResourceException

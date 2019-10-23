@@ -2,6 +2,7 @@ import boto3
 
 exceptions = boto3.client('waf').exceptions
 
+WAFBadRequestException = exceptions.WAFBadRequestException
 WAFDisallowedNameException = exceptions.WAFDisallowedNameException
 WAFInternalErrorException = exceptions.WAFInternalErrorException
 WAFInvalidAccountException = exceptions.WAFInvalidAccountException
@@ -17,3 +18,5 @@ WAFReferencedItemException = exceptions.WAFReferencedItemException
 WAFServiceLinkedRoleErrorException = exceptions.WAFServiceLinkedRoleErrorException
 WAFStaleDataException = exceptions.WAFStaleDataException
 WAFSubscriptionNotFoundException = exceptions.WAFSubscriptionNotFoundException
+WAFTagOperationException = exceptions.WAFTagOperationException
+WAFTagOperationInternalErrorException = exceptions.WAFTagOperationInternalErrorException

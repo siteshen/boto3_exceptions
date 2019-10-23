@@ -1,0 +1,10 @@
+import boto3
+
+exceptions = boto3.client('qldb').exceptions
+
+InvalidParameterException = exceptions.InvalidParameterException
+LimitExceededException = exceptions.LimitExceededException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ResourceInUseException = exceptions.ResourceInUseException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
+ResourcePreconditionNotMetException = exceptions.ResourcePreconditionNotMetException

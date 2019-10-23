@@ -1,0 +1,19 @@
+import boto3
+
+exceptions = boto3.client('service-quotas').exceptions
+
+AWSServiceAccessNotEnabledException = exceptions.AWSServiceAccessNotEnabledException
+AccessDeniedException = exceptions.AccessDeniedException
+DependencyAccessDeniedException = exceptions.DependencyAccessDeniedException
+IllegalArgumentException = exceptions.IllegalArgumentException
+InvalidPaginationTokenException = exceptions.InvalidPaginationTokenException
+InvalidResourceStateException = exceptions.InvalidResourceStateException
+NoAvailableOrganizationException = exceptions.NoAvailableOrganizationException
+NoSuchResourceException = exceptions.NoSuchResourceException
+OrganizationNotInAllFeaturesModeException = exceptions.OrganizationNotInAllFeaturesModeException
+QuotaExceededException = exceptions.QuotaExceededException
+ResourceAlreadyExistsException = exceptions.ResourceAlreadyExistsException
+ServiceException = exceptions.ServiceException
+ServiceQuotaTemplateNotInUseException = exceptions.ServiceQuotaTemplateNotInUseException
+TemplatesNotAvailableInRegionException = exceptions.TemplatesNotAvailableInRegionException
+TooManyRequestsException = exceptions.TooManyRequestsException

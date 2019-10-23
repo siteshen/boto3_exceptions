@@ -2,6 +2,7 @@ import boto3
 
 exceptions = boto3.client('polly').exceptions
 
+EngineNotSupportedException = exceptions.EngineNotSupportedException
 InvalidLexiconException = exceptions.InvalidLexiconException
 InvalidNextTokenException = exceptions.InvalidNextTokenException
 InvalidS3BucketException = exceptions.InvalidS3BucketException

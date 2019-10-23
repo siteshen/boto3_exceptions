@@ -9,3 +9,6 @@ LimitExceededException = exceptions.LimitExceededException
 NotEligibleException = exceptions.NotEligibleException
 NotFoundException = exceptions.NotFoundException
 ServiceAccountException = exceptions.ServiceAccountException
+TagOperationException = exceptions.TagOperationException
+TagPolicyException = exceptions.TagPolicyException
+TooManyTagsException = exceptions.TooManyTagsException

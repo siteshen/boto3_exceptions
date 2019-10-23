@@ -18,3 +18,4 @@ NotServiceResourceError = exceptions.NotServiceResourceError
 ResourceDoesNotSupportTagging = exceptions.ResourceDoesNotSupportTagging
 ResourceNotFound = exceptions.ResourceNotFound
 ServiceLimitExceeded = exceptions.ServiceLimitExceeded
+UnsupportedOperation = exceptions.UnsupportedOperation

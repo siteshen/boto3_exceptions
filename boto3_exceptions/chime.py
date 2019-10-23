@@ -6,6 +6,7 @@ BadRequestException = exceptions.BadRequestException
 ConflictException = exceptions.ConflictException
 ForbiddenException = exceptions.ForbiddenException
 NotFoundException = exceptions.NotFoundException
+ResourceLimitExceededException = exceptions.ResourceLimitExceededException
 ServiceFailureException = exceptions.ServiceFailureException
 ServiceUnavailableException = exceptions.ServiceUnavailableException
 ThrottledClientException = exceptions.ThrottledClientException

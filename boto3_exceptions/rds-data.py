@@ -2,7 +2,9 @@ import boto3
 
 exceptions = boto3.client('rds-data').exceptions
 
-ForbiddenException = exceptions.ForbiddenException
 BadRequestException = exceptions.BadRequestException
-ServiceUnavailableError = exceptions.ServiceUnavailableError
+ForbiddenException = exceptions.ForbiddenException
 InternalServerErrorException = exceptions.InternalServerErrorException
+NotFoundException = exceptions.NotFoundException
+ServiceUnavailableError = exceptions.ServiceUnavailableError
+StatementTimeoutException = exceptions.StatementTimeoutException

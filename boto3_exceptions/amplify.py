@@ -7,4 +7,5 @@ DependentServiceFailureException = exceptions.DependentServiceFailureException
 InternalFailureException = exceptions.InternalFailureException
 LimitExceededException = exceptions.LimitExceededException
 NotFoundException = exceptions.NotFoundException
+ResourceNotFoundException = exceptions.ResourceNotFoundException
 UnauthorizedException = exceptions.UnauthorizedException
